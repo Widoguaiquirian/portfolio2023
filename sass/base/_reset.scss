@@ -1,0 +1,30 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   background-color: var(--bg-color);
+}
+
+img {
+   max-width: 100%;
+}
+
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+/*missing alt attribute*/
+img:not([alt]) {
+   outline: 5px dashed red;
+   outline-offset: 5px;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+   outline: 5px solid blue;
+   outline-offset: 15px;
+}

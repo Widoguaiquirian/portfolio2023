@@ -1,0 +1,60 @@
+html {
+  --primary-color: #ef5da8;
+  --primary-color-light: #fdeef6;
+  --primary-color-dark: #170910;
+  --secondary-color: #5d5fef;
+  --secondary-color-light: #eeeffd;
+  --secondary-color-dark: #090917;
+  --tertiary-color: #7a7a7a;
+  --tertiary-color-light: #f1f1f1;
+  --tertiary-color-dark: #0c0c0c;
+  --call-to-action: #ef5d5f;
+  --regular-text: #3d3d3d;
+  --bg-color: #fcfbfb; }
+
+html[data-theme="dark"] {
+  --primary-color: #ef5da8;
+  --primary-color-light: #fdeef6;
+  --primary-color-dark: #170910;
+  --secondary-color: #5d5fef;
+  --secondary-color-light: #eeeffd;
+  --secondary-color-dark: #090917;
+  --tertiary-color: #7a7a7a;
+  --tertiary-color-light: #f1f1f1;
+  --call-to-action: #ef5d5f;
+  --tertiary-color-dark: #dedffb;
+  --regular-text: #f1f1f1;
+  --bg-color: #090917; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: var(--bg-color); }
+
+img {
+  max-width: 100%; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 5px dashed red;
+  outline-offset: 5px; }
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 5px solid blue;
+  outline-offset: 15px; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: var(--regular-text); }
