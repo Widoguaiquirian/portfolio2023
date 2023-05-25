@@ -84,20 +84,24 @@ footer {
 
 header {
   background-color: var(--tertiary-color-dark);
-  min-height: 990px;
-  max-height: 100vh; }
+  height: 990px;
+  max-height: 100vh;
+  width: 160rem;
+  max-width: 100%;
+  margin: 0 auto; }
   header .hero {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto; }
     header .hero__logo {
       width: 180px; }
     header .hero__menu {
       display: flex;
       width: 100px;
       justify-content: space-around;
-      align-items: center;
-      margin-right: 3vw; }
+      align-items: center; }
       header .hero__menu--hamburguer {
         width: 40px;
         height: 40px;
