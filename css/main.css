@@ -90,14 +90,6 @@ footer {
   grid-column: 3/11;
   grid-row: 6/7; }
 
-body {
-  display: grid;
-  grid-template-columns: minmax(3rem, 1fr) repeat(10, minmax(min-content, 9.2rem)) minmax(3rem, 1fr);
-  grid-template-rows: repeat(6, min-content);
-  grid-column-gap: 2rem;
-  margin: 0 auto;
-  max-width: 160rem; }
-
 header {
   background-color: var(--tertiary-color-dark);
   min-height: 990px;
