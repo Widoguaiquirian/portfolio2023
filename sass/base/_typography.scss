@@ -3,7 +3,7 @@ html {
 }
 
 body {
-   font-size: 1.6rem;
+   font-size: clamp(1.4rem, 4vw, 1.6rem);
    font-family: "Open Sans", sans-serif;
    color: var(--regular-text);
 }

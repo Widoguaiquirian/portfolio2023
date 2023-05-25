@@ -19,10 +19,11 @@ header {
          width: 100px;
          justify-content: space-around;
          align-items: center;
+         margin-right: 3vw;
 
          &--hamburguer {
-            width: 46px;
-            height: 46px;
+            width: 40px;
+            height: 40px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -30,7 +31,7 @@ header {
 
             .line {
                background-color: #ffffff;
-               height: 4.64px;
+               height: 3.64px;
                border-radius: 5px;
             }
          }
