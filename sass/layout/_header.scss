@@ -2,8 +2,6 @@ header {
    background-color: var(--tertiary-color-dark);
    min-height: 990px;
    max-height: 100vh;
-   grid-column: 1/-1;
-   grid-row: 1/2;
 
    .hero {
       display: flex;
