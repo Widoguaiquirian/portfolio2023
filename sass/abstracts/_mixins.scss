@@ -21,6 +21,10 @@
    line-height: 3.5rem;
    color: var(--tertiary-color-dark);
    letter-spacing: 0.02em;
+
+   span {
+      color: var(--call-to-action);
+   }
 }
 
 @mixin subheading-shd {
@@ -45,14 +49,9 @@
 }
 
 @mixin text-note {
-   font-size: (1rem, 4vw, 1.3rem);
+   font-size: 1.3rem;
    line-height: 1.7rem;
    font-weight: 600;
    font-family: "Montserrat", sans-serif;
    letter-spacing: 0.02em;
-}
-
-// Sections padding
-@mixin padding-section {
-   padding: 3vw 2vh;
 }
