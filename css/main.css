@@ -62,6 +62,10 @@ img[alt=""] {
   outline: 5px solid blue;
   outline-offset: 15px; }
 
+main {
+  max-width: 900px;
+  margin: 0 auto; }
+
 html {
   font-size: 62.5%; }
 
@@ -81,87 +85,72 @@ span {
   margin: 0;
   padding: 0; }
 
-.abilities {
-  background-color: var(--tertiary-color); }
-
 .about {
-  background-color: var(--secondary-color); }
-
-.experience {
-  background-color: var(--tertiary-color); }
-
-footer {
-  background-color: var(--primary-color); }
-
-header {
-  background-color: var(--tertiary-color-dark);
-  height: 990px;
-  max-height: 100vh;
-  width: 160rem;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative; }
-  header .hero {
+  width: 100%; }
+  .about__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(2rem, 4vw, 4.8rem);
+    line-height: 40px;
+    color: var(--tertiary-color-dark);
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-align: right; }
+  .about__subtitle {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3.3rem);
+    line-height: 3.5rem;
+    color: var(--tertiary-color-dark);
+    letter-spacing: 0.02em; }
+    .about__subtitle span {
+      color: var(--call-to-action); }
+  .about__subheading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    line-height: 28px;
+    color: var(--tertiary-color-dark);
+    letter-spacing: 0.03em; }
+  .about__content {
+    width: 722px;
+    height: 390px;
+    border: 1px solid red;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 95%;
-    margin: 0 auto; }
-    header .hero__logo {
-      width: 180px; }
-    header .hero__menu {
-      display: flex;
-      width: 100px;
-      justify-content: space-around;
-      align-items: center;
-      margin-right: 8.8rem; }
-      header .hero__menu--hamburguer {
-        width: 45px;
-        height: 45px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        cursor: pointer; }
-        header .hero__menu--hamburguer .line {
-          background-color: #ffffff;
-          height: 3.64px;
-          border-radius: 5px; }
-    header .hero__scroll {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 392%);
-      width: 39.8px;
-      height: 76px;
-      border: 2px solid var(--bg-color);
-      border-radius: 15px; }
-      header .hero__scroll::after {
-        content: "";
+    align-items: end;
+    justify-content: center; }
+    .about__content--odometro {
+      width: 142px;
+      height: 142px;
+      background-color: white;
+      border: 5px royalblue solid;
+      border-radius: 50%;
+      margin-bottom: -7rem;
+      position: relative; }
+      .about__content--odometro__fill {
         position: absolute;
-        width: 7.24px;
-        border-radius: 50%;
-        height: 7.24px;
-        background-color: var(--bg-color);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: scrollDown;
-        animation-timing-function: ease-in-out;
-        animation-duration: 3s;
-        animation-fill-mode: backwards;
-        animation-iteration-count: infinite; }
+        bottom: 6.6rem; }
+        .about__content--odometro__fill:nth-child(1) {
+          background-color: rgba(255, 0, 0, 0.288);
+          height: 381px;
+          width: 196px;
+          left: 50%; }
+        .about__content--odometro__fill:nth-child(2) {
+          background-color: rgba(60, 255, 0, 0.288);
+          height: 247px;
+          width: 123px;
+          left: -50%; }
 
 .intro {
   padding: 16rem 0 10.4rem 0; }
   .intro__content {
     margin: 0 auto;
-    width: 920px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 2rem; }
     .intro__content--container {
-      flex-basis: 50%;
       display: flex;
       justify-content: space-around;
       width: 428px;
