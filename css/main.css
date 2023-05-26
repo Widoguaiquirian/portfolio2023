@@ -134,12 +134,15 @@ span {
           background-color: rgba(255, 0, 0, 0.288);
           height: 381px;
           width: 196px;
-          left: 50%; }
+          left: 50%;
+          clip-path: polygon(0 0, 100% 0, 0% 100%); }
         .about__content--odometro__fill:nth-child(2) {
-          background-color: rgba(60, 255, 0, 0.288);
+          background-color: rgba(0, 255, 42, 0.288);
           height: 247px;
           width: 123px;
-          left: -50%; }
+          left: -42%;
+          clip-path: polygon(0 0, 100% 0, 0% 100%);
+          transform: scaleX(-1); }
 
 .intro {
   padding: 16rem 0 10.4rem 0; }
