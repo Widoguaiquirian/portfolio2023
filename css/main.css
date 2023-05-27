@@ -209,7 +209,13 @@ span {
 .footer__content {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 0 auto; }
+  .footer__content--mid__list {
+    display: flex; }
+  .footer__content--social__list {
+    display: flex; }
 
 header {
   background-color: var(--tertiary-color-dark);
