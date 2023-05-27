@@ -225,9 +225,13 @@ a {
       display: flex;
       flex-direction: column;
       text-align: center; }
+      .footer__content--mid__list {
+        display: flex;
+        justify-content: center; }
+        .footer__content--mid__list--item {
+          margin: 0 1rem; }
     .footer__content--social {
-      border: 1px solid red;
-      display: flex; }
+      border: 1px solid red; }
 
 header {
   background-color: var(--tertiary-color-dark);
