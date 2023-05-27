@@ -1,0 +1,19 @@
+.abilities {
+   margin-bottom: 4rem;
+   &__content {
+      width: 100%;
+
+      &--title {
+         @include heading-h4;
+      }
+
+      &--heading {
+         @include subheading-shd;
+         margin-bottom: 1rem;
+      }
+
+      &--para {
+         @include regular-btl;
+      }
+   }
+}
