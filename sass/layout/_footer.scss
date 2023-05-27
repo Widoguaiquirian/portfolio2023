@@ -1,4 +1,8 @@
 .footer {
+   max-width: 1600px;
+   margin: 0 auto;
+   border: 1px solid red;
+
    &__divider {
       border: 1px solid rgba(0, 0, 0, 0.526);
       width: 816px;
@@ -21,19 +25,23 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 85%;
-      margin: 0 auto;
+      margin: 5rem auto;
+      border: 1px solid red;
+
+      &--logo {
+         border: 1px solid red;
+      }
 
       &--mid {
-         &__list {
-            display: flex;
-         }
+         border: 1px solid red;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
       }
 
       &--social {
-         &__list {
-            display: flex;
-         }
+         border: 1px solid red;
+         display: flex;
       }
    }
 }
