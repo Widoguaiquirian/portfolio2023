@@ -114,8 +114,7 @@ span {
   .about__content {
     width: 722px;
     height: 390px;
-    border: 1px solid red;
-    margin: 0 auto;
+    margin: 3rem auto;
     display: flex;
     align-items: end;
     justify-content: center; }
@@ -124,25 +123,105 @@ span {
       height: 142px;
       background-color: white;
       border: 5px royalblue solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       border-radius: 50%;
+      cursor: pointer;
       margin-bottom: -7rem;
       position: relative; }
       .about__content--odometro__fill {
         position: absolute;
-        bottom: 6.6rem; }
-        .about__content--odometro__fill:nth-child(1) {
-          background-color: rgba(255, 0, 0, 0.288);
-          height: 381px;
-          width: 196px;
-          left: 50%;
-          clip-path: polygon(0 0, 100% 0, 0% 100%); }
-        .about__content--odometro__fill:nth-child(2) {
-          background-color: rgba(0, 255, 42, 0.288);
-          height: 247px;
-          width: 123px;
-          left: -42%;
-          clip-path: polygon(0 0, 100% 0, 0% 100%);
-          transform: scaleX(-1); }
+        bottom: 6.6rem;
+        transform-origin: bottom;
+        transform: translate(-50%);
+        height: 381px;
+        width: 206px;
+        z-index: -1;
+        clip-path: polygon(50% 100%, 0 0, 100% 0); }
+        .about__content--odometro__fill:nth-child(3) {
+          background-color: #5d5fef;
+          transform: rotate(15deg); }
+        .about__content--odometro__fill:nth-child(4) {
+          background-color: #4a4cbf;
+          transform: rotate(-15deg);
+          height: 260px;
+          z-index: -2; }
+        .about__content--odometro__fill:nth-child(5) {
+          background-color: #9d9ff5;
+          transform: rotate(-45deg);
+          height: 300px; }
+        .about__content--odometro__fill:nth-child(6) {
+          background-color: #25265f;
+          transform: rotate(45deg);
+          height: 220px;
+          z-index: -2; }
+        .about__content--odometro__fill:nth-child(7) {
+          background-color: #dedffb;
+          transform: rotate(75deg);
+          height: 370px; }
+        .about__content--odometro__fill:nth-child(8) {
+          background-color: #ef5d5f;
+          transform: rotate(-75deg); }
+
+header {
+  background-color: var(--tertiary-color-dark);
+  height: 990px;
+  max-height: 100vh;
+  width: 160rem;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  header .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto; }
+    header .hero__logo {
+      width: 180px; }
+    header .hero__menu {
+      display: flex;
+      width: 100px;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 8.8rem; }
+      header .hero__menu--hamburguer {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer; }
+        header .hero__menu--hamburguer .line {
+          background-color: #ffffff;
+          height: 3.64px;
+          border-radius: 5px; }
+    header .hero__scroll {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 392%);
+      width: 39.8px;
+      height: 76px;
+      border: 2px solid var(--bg-color);
+      border-radius: 15px; }
+      header .hero__scroll::after {
+        content: "";
+        position: absolute;
+        width: 7.24px;
+        border-radius: 50%;
+        height: 7.24px;
+        background-color: var(--bg-color);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: scrollDown;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite; }
 
 .intro {
   padding: 16rem 0 10.4rem 0; }
