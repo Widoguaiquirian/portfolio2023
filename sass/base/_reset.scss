@@ -30,6 +30,7 @@ img[alt=""] {
 }
 
 main {
-   max-width: 900px;
+   max-width: 1200px;
    margin: 0 auto;
+   padding: 0 clamp(0.5rem, 40vh, 15rem);
 }
