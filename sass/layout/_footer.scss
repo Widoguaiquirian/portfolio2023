@@ -1,6 +1,6 @@
 .footer {
    max-width: 1600px;
-   margin: 0 auto;
+   margin: 3rem auto;
 
    &__divider {
       border: 1px solid rgba(0, 0, 0, 0.526);
@@ -22,8 +22,10 @@
 
    &__content {
       display: flex;
-      align-items: center;
-      margin: 3rem auto;
+      align-items: end;
+      margin: 4.2rem auto 0 auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+      padding-bottom: 3rem;
 
       &--logo {
          flex-basis: 33.333333%;
@@ -41,9 +43,22 @@
          &__list {
             display: flex;
             justify-content: center;
+            margin-bottom: 2rem;
 
             &--item {
                margin: 0 2.1rem;
+
+               &__link {
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 600;
+                  font-size: clamp(1rem, 4vw, 1.4rem);
+                  color: black;
+                  transition: 0.4s ease;
+
+                  &:hover {
+                     color: #4a4cbf;
+                  }
+               }
             }
          }
       }
@@ -52,7 +67,6 @@
          flex-basis: 33.333333%;
          display: flex;
          justify-content: center;
-         align-items: end;
 
          &__list {
             display: flex;
@@ -66,8 +80,42 @@
 
    &__copy {
       display: flex;
-      width: 100%;
-      border-top: 1px solid black;
-      justify-content: center;
+      width: 85%;
+      margin: 0 auto;
+      color: black;
+
+      justify-content: space-between;
+      padding-top: 1rem;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+
+      &--left {
+         flex-basis: 45%;
+      }
+
+      &--mid {
+         flex-basis: 10%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &__language {
+            width: 135px;
+            height: 4.2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+         }
+      }
+
+      &--right {
+         flex-basis: 45%;
+         text-align: right;
+      }
    }
 }

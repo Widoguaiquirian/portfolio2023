@@ -196,7 +196,7 @@ a {
 
 .footer {
   max-width: 1600px;
-  margin: 0 auto; }
+  margin: 3rem auto; }
   .footer__divider {
     border: 1px solid rgba(0, 0, 0, 0.526);
     width: 816px;
@@ -213,8 +213,10 @@ a {
       transform: translate(-50%, -50%); }
   .footer__content {
     display: flex;
-    align-items: center;
-    margin: 3rem auto; }
+    align-items: end;
+    margin: 4.2rem auto 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    padding-bottom: 3rem; }
     .footer__content--logo {
       flex-basis: 33.333333%;
       display: flex;
@@ -227,23 +229,56 @@ a {
       flex-basis: 33.333333%; }
       .footer__content--mid__list {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        margin-bottom: 2rem; }
         .footer__content--mid__list--item {
           margin: 0 2.1rem; }
+          .footer__content--mid__list--item__link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: clamp(1rem, 4vw, 1.4rem);
+            color: black;
+            transition: 0.4s ease; }
+            .footer__content--mid__list--item__link:hover {
+              color: #4a4cbf; }
     .footer__content--social {
       flex-basis: 33.333333%;
       display: flex;
-      justify-content: center;
-      align-items: end; }
+      justify-content: center; }
       .footer__content--social__list {
         display: flex; }
         .footer__content--social__list--item {
           margin: 0 0.5rem; }
   .footer__copy {
     display: flex;
-    width: 100%;
-    border-top: 1px solid black;
-    justify-content: center; }
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    justify-content: space-between;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.2rem; }
+    .footer__copy--left {
+      flex-basis: 45%; }
+    .footer__copy--mid {
+      flex-basis: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .footer__copy--mid__language {
+        width: 135px;
+        height: 4.2rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey; }
+    .footer__copy--right {
+      flex-basis: 45%;
+      text-align: right; }
 
 header {
   background-color: var(--tertiary-color-dark);
