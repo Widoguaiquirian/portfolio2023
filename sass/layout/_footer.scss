@@ -1,7 +1,6 @@
 .footer {
    max-width: 1600px;
    margin: 0 auto;
-   border: 1px solid red;
 
    &__divider {
       border: 1px solid rgba(0, 0, 0, 0.526);
@@ -24,32 +23,51 @@
    &__content {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin: 5rem auto;
-      border: 1px solid red;
+      margin: 3rem auto;
 
       &--logo {
-         border: 1px solid red;
+         flex-basis: 33.333333%;
+         display: flex;
+         justify-content: center;
+         font-size: 4rem;
       }
 
       &--mid {
-         border: 1px solid red;
          display: flex;
          flex-direction: column;
          text-align: center;
+         flex-basis: 33.333333%;
 
          &__list {
             display: flex;
             justify-content: center;
 
             &--item {
-               margin: 0 1rem;
+               margin: 0 2.1rem;
             }
          }
       }
 
       &--social {
-         border: 1px solid red;
+         flex-basis: 33.333333%;
+         display: flex;
+         justify-content: center;
+         align-items: end;
+
+         &__list {
+            display: flex;
+
+            &--item {
+               margin: 0 0.5rem;
+            }
+         }
       }
+   }
+
+   &__copy {
+      display: flex;
+      width: 100%;
+      border-top: 1px solid black;
+      justify-content: center;
    }
 }
