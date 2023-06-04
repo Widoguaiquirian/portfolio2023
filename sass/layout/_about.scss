@@ -16,11 +16,12 @@
    }
 
    &__content {
-      width: 722px;
+      width: 767px;
       height: 390px;
-      margin: 3rem auto;
+      margin: 3rem auto 25rem auto;
       display: flex;
       align-items: end;
+      border-bottom: 1px solid black;
       justify-content: center;
 
       &--odometro {

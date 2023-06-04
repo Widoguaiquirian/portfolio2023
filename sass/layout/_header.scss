@@ -15,34 +15,6 @@ header {
       max-width: 95%;
       margin: 0 auto;
 
-      &__logo {
-         width: 180px;
-      }
-
-      &__menu {
-         display: flex;
-         width: 100px;
-         justify-content: space-around;
-         align-items: center;
-         margin-right: 8.8rem;
-
-         &--hamburguer {
-            width: 45px;
-            height: 45px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            cursor: pointer;
-
-            .line {
-               background-color: #ffffff;
-               height: 3.64px;
-               border-radius: 5px;
-            }
-         }
-      }
-
       &__scroll {
          position: absolute;
          top: 50%;
