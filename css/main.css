@@ -203,6 +203,68 @@ a {
           background-color: #ef5d5f;
           transform: rotate(-75deg); }
 
+.experience__content {
+  width: 530px;
+  margin: 8rem auto; }
+  .experience__content--top {
+    margin: 0 auto 7rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .experience__content--top__container {
+      display: flex;
+      flex-direction: column; }
+      .experience__content--top__container span {
+        font-size: 1.2rem;
+        font-weight: bold; }
+    .experience__content--top .digit {
+      color: #5d5fef;
+      font-weight: 500;
+      font-size: 3.4rem;
+      line-height: 4.1rem; }
+    .experience__content--top__hours {
+      position: relative; }
+      .experience__content--top__hours .year {
+        position: relative; }
+        .experience__content--top__hours .year::after {
+          content: "2022";
+          position: absolute;
+          top: -50px;
+          font-weight: bold;
+          left: 0; }
+  .experience__content--bottom {
+    width: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .experience__content--bottom__slider {
+      width: 100%;
+      background-color: gray;
+      height: 6px;
+      position: relative; }
+      .experience__content--bottom__slider::after {
+        content: "";
+        width: 44px;
+        position: absolute;
+        top: 0;
+        height: 6px;
+        z-index: 9;
+        left: 0;
+        background-color: #f20574; }
+    .experience__content--bottom__info {
+      height: 4rem;
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ef5da8;
+      font-size: 1.2rem;
+      font-weight: 400; }
+    .experience__content--bottom__teacher {
+      font-size: 1rem;
+      margin-top: 2rem; }
+
 .footer {
   max-width: 1600px;
   margin: 3rem auto; }
@@ -210,7 +272,8 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.526);
     width: 816px;
     max-width: 95%;
-    position: relative; }
+    position: relative;
+    margin-bottom: 12rem; }
     .footer__divider::after {
       content: "";
       position: absolute;

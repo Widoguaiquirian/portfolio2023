@@ -1,0 +1,88 @@
+.experience {
+   &__content {
+      width: 530px;
+      margin: 8rem auto;
+
+      &--top {
+         margin: 0 auto 7rem auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         &__container {
+            display: flex;
+            flex-direction: column;
+
+            span {
+               font-size: 1.2rem;
+               font-weight: bold;
+            }
+         }
+
+         .digit {
+            color: #5d5fef;
+            font-weight: 500;
+            font-size: 3.4rem;
+            line-height: 4.1rem;
+         }
+
+         &__hours {
+            position: relative;
+
+            .year {
+               position: relative;
+
+               &::after {
+                  content: "2022";
+                  position: absolute;
+                  top: -50px;
+                  font-weight: bold;
+                  left: 0;
+               }
+            }
+         }
+      }
+
+      &--bottom {
+         width: 380px;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: column;
+
+         &__slider {
+            width: 100%;
+            background-color: gray;
+            height: 6px;
+            position: relative;
+
+            &::after {
+               content: "";
+               width: 44px;
+               position: absolute;
+               top: 0;
+               height: 6px;
+               z-index: 9;
+               left: 0;
+               background-color: #f20574;
+            }
+         }
+
+         &__info {
+            height: 4rem;
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ef5da8;
+            font-size: 1.2rem;
+            font-weight: 400;
+         }
+
+         &__teacher {
+            font-size: 1rem;
+            margin-top: 2rem;
+         }
+      }
+   }
+}
