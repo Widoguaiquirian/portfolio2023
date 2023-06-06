@@ -290,10 +290,47 @@ a {
   max-width: 1600px;
   width: 100%;
   margin: 16rem auto 0 auto;
-  background-color: #eeeffd4d; }
+  background-color: #eeeffd4d;
+  font-family: "Montserrat", sans-serif; }
   .footer__content {
     width: 1300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer__content--info {
+      font-size: 1.4rem; }
+      .footer__content--info__list {
+        display: flex;
+        margin-bottom: 2rem; }
+        .footer__content--info__list--item__link {
+          font-weight: 600;
+          color: black;
+          margin-right: 4.3rem; }
+      .footer__content--info__para {
+        font-weight: 500;
+        line-height: 2.2rem;
+        width: 434px; }
+    .footer__content--contact {
+      display: flex;
+      align-items: center; }
+      .footer__content--contact__graph {
+        width: 150px;
+        height: 150px;
+        margin-right: 3rem; }
+      .footer__content--contact__info {
+        width: 160px; }
+        .footer__content--contact__info h5 {
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-bottom: 1.8rem; }
+        .footer__content--contact__info span {
+          font-size: 1.3rem; }
+  .footer__bottom {
+    width: 1300px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between; }
 
 header {
   background-color: #0c0c0c;

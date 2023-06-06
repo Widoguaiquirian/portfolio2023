@@ -29,9 +29,68 @@
    width: 100%;
    margin: 16rem auto 0 auto;
    background-color: #eeeffd4d;
+   font-family: "Montserrat", sans-serif;
 
    &__content {
       width: 1300px;
       margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--info {
+         font-size: 1.4rem;
+
+         &__list {
+            display: flex;
+            margin-bottom: 2rem;
+
+            &--item {
+               &__link {
+                  font-weight: 600;
+                  color: black;
+                  margin-right: 4.3rem;
+               }
+            }
+         }
+
+         &__para {
+            font-weight: 500;
+            line-height: 2.2rem;
+            width: 434px;
+         }
+      }
+
+      &--contact {
+         display: flex;
+         align-items: center;
+
+         &__graph {
+            width: 150px;
+            height: 150px;
+            margin-right: 3rem;
+         }
+
+         &__info {
+            width: 160px;
+
+            h5 {
+               font-size: 1.4rem;
+               font-weight: 600;
+               margin-bottom: 1.8rem;
+            }
+
+            span {
+               font-size: 1.3rem;
+            }
+         }
+      }
+   }
+
+   &__bottom {
+      width: 1300px;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
    }
 }
