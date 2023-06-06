@@ -27,6 +27,7 @@
 .footer {
    max-width: 1600px;
    width: 100%;
+   padding: 6.5rem 0;
    margin: 16rem auto 0 auto;
    background-color: #eeeffd4d;
    font-family: "Montserrat", sans-serif;
@@ -89,8 +90,9 @@
 
    &__bottom {
       width: 1300px;
-      margin: 2rem auto;
+      margin: 8rem auto 0 auto;
       display: flex;
       justify-content: space-between;
+      font-size: 1.2rem;
    }
 }
