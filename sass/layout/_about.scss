@@ -1,6 +1,5 @@
 .about {
    width: 100%;
-   margin-bottom: 17rem;
 
    &__title {
       @include heading-h2;
@@ -18,24 +17,32 @@
    &__content {
       width: 767px;
       height: 390px;
-      margin: 3rem auto 25rem auto;
+      margin: 0 auto;
       display: flex;
       align-items: end;
-      border-bottom: 1px solid black;
       justify-content: center;
 
       &--odometro {
          width: 143px;
          height: 143px;
-         background: linear-gradient(#e85f64, #0a99f8);
+         // background: linear-gradient(#e85f64, #0a99f8);
          border-radius: 50%;
-         cursor: pointer;
-         margin-bottom: -7rem;
          position: relative;
+
+         &::after {
+            content: "";
+            position: absolute;
+            width: 722px;
+            height: 1px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
 
          &__inner {
             position: absolute;
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(57, 224, 6, 0.829);
             border-radius: 50%;
             width: 130px;
             height: 130px;
@@ -57,60 +64,47 @@
 
          &__fill {
             position: absolute;
-            bottom: 6.6rem;
-            text-align: center;
             font-size: 2rem;
+            height: 360px;
+            width: 206px;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+
+            text-align: center;
+            padding-top: 3rem;
             color: white;
 
-            transform-origin: bottom;
-
-            transform: translate(-50%);
-            height: 381px;
-            width: 206px;
-            z-index: -1;
-
-            display: flex;
-            align-items: start;
-            padding-top: 8rem;
-            justify-content: center;
-
-            clip-path: polygon(50% 100%, 0 0, 100% 0);
-
-            &:nth-child(3) {
-               background-color: #5d5fef;
-               transform: rotate(15deg);
+            // HTML 5
+            &:nth-child(2) {
+               background-color: #090917;
             }
 
-            &:nth-child(4) {
-               background-color: #4a4cbf;
-               transform: rotate(-15deg);
-               height: 260px;
-               z-index: -2;
-            }
+            // // CSS 3
+            // &:nth-child(3) {
+            //    background-color: #25265f;
+            // }
 
-            &:nth-child(5) {
-               background-color: #9d9ff5;
-               transform: rotate(-45deg);
-               height: 300px;
-            }
+            // // JS
+            // &:nth-child(4) {
+            //    background-color: #4a4cbf;
+            // }
 
-            &:nth-child(6) {
-               background-color: #25265f;
-               transform: rotate(45deg);
-               height: 220px;
-               z-index: -2;
-            }
+            // // Sass
+            // &:nth-child(5) {
+            //    background-color: #5d5fef;
+            // }
 
-            &:nth-child(7) {
-               background-color: #dedffb;
-               transform: rotate(75deg);
-               height: 370px;
-            }
+            // // React
+            // &:nth-child(6) {
+            //    background-color: #9d9ff5;
+            // }
 
-            &:nth-child(8) {
-               background-color: #ef5d5f;
-               transform: rotate(-75deg);
-            }
+            // // Others
+            // &:nth-child(7) {
+            //    background-color: #dedffb;
+            // }
          }
       }
    }
