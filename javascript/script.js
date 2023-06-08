@@ -1,13 +1,95 @@
 "use strict";
 
-// Dark theme
-const darkThemeCheck = document.querySelector('input[name="theme"]');
-const htmlElement = document.documentElement;
+// Counter increment
+// const counters = document.querySelectorAll(".counter");
 
-darkThemeCheck.addEventListener("change", function () {
-   if (darkThemeCheck.checked) {
-      htmlElement.setAttribute("data-theme", "dark");
-   } else {
-      htmlElement.setAttribute("data-theme", "light");
-   }
-});
+// counters.forEach((counter) => {
+//    counter.innerText = "0";
+
+//    const updateCounter = () => {
+//       const target = +counter.getAttribute("data-target");
+//       const c = +counter.innerText;
+
+//       const increment = target / 500;
+
+//       if (c < target) {
+//          counter.innerText = `${Math.ceil(c + increment)}`;
+
+//          setTimeout(updateCounter, 1);
+//       } else {
+//          counter.innerText = target;
+//       }
+//    };
+
+//    updateCounter();
+// });
+
+const counterYears = document.querySelector(".counterYears");
+const counterProjects = document.querySelector(".counterProjects");
+const counterHours = document.querySelector(".counterHours");
+
+const incrementHours = function (counter) {
+   counterHours.innerText = "0";
+
+   const updateCounter = () => {
+      const target = +counterHours.getAttribute("data-target");
+      const c = +counterHours.innerText;
+
+      const increment = target / 300;
+
+      if (c < target) {
+         counterHours.innerText = `${Math.ceil(c + increment)}`;
+         setTimeout(updateCounter, 1);
+      } else {
+         counterHours.innerText = target;
+      }
+   };
+
+   updateCounter();
+};
+
+incrementHours();
+
+const incrementProjects = function (counter) {
+   counterProjects.innerText = "0";
+
+   const updateCounter = () => {
+      const target = +counterProjects.getAttribute("data-target");
+      const c = +counterProjects.innerText;
+
+      const increment = target / 500;
+
+      if (c < target) {
+         counterProjects.innerText = `${Math.ceil(c + increment)}`;
+         setTimeout(updateCounter, 90);
+      } else {
+         counterProjects.innerText = target;
+      }
+   };
+
+   updateCounter();
+};
+
+incrementProjects();
+
+const incrementYears = function (counter) {
+   counterYears.innerText = "0";
+
+   const updateCounter = () => {
+      const target = +counterYears.getAttribute("data-target");
+      const c = +counterYears.innerText;
+
+      const increment = target / 500;
+
+      if (c < target) {
+         counterYears.innerText = `${Math.ceil(c + increment)}`;
+         setTimeout(updateCounter, 600);
+      } else {
+         counterYears.innerText = target;
+      }
+   };
+
+   updateCounter();
+};
+
+incrementYears();
