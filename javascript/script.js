@@ -48,8 +48,6 @@ const incrementHours = function (counter) {
    updateCounter();
 };
 
-incrementHours();
-
 const incrementProjects = function (counter) {
    counterProjects.innerText = "0";
 
@@ -69,8 +67,6 @@ const incrementProjects = function (counter) {
 
    updateCounter();
 };
-
-incrementProjects();
 
 const incrementYears = function (counter) {
    counterYears.innerText = "0";
@@ -92,4 +88,20 @@ const incrementYears = function (counter) {
    updateCounter();
 };
 
-incrementYears();
+const odometro = document.querySelector(".odometro");
+const odometroHeight = odometro.getBoundingClientRect().height;
+
+function activarOdometro(entries) {
+   const entry = entries[0];
+
+   if (entry.isIntersecting) {
+      incrementHours();
+      incrementProjects();
+      incrementYears();
+   }
+}
+const observer = new IntersectionObserver(activarOdometro, {
+   rootMargin: `${odometroHeight + 10}px`,
+});
+
+observer.observe(odometro);
