@@ -147,12 +147,23 @@ a {
     display: flex;
     align-items: end;
     justify-content: center; }
-    .about__content--odometro {
+    .about__content--graph {
       width: 143px;
       height: 143px;
+      background: linear-gradient(#e85f64, #0a99f8);
       border-radius: 50%;
       position: relative; }
-      .about__content--odometro::after {
+      .about__content--graph::before {
+        content: "";
+        background-color: black;
+        width: 1px;
+        height: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 225%);
+        z-index: 1; }
+      .about__content--graph::after {
         content: "";
         position: absolute;
         width: 722px;
@@ -160,80 +171,58 @@ a {
         background-color: black;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); }
-      .about__content--odometro__inner {
+        transform: translate(-50%, -50%);
+        z-index: -1; }
+      .about__content--graph__inner {
         position: absolute;
-        background-color: rgba(57, 224, 6, 0.829);
+        background-color: white;
         border-radius: 50%;
         width: 130px;
         height: 130px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-        .about__content--odometro__inner::after {
-          content: "";
-          background-color: black;
-          width: 1px;
-          height: 2rem;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, 225%); }
-      .about__content--odometro__fill {
-        position: absolute;
-        font-size: 2rem;
-        height: 360px;
-        width: 206px;
-        clip-path: polygon(50% 100%, 0 0, 100% 0);
-        top: -50%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        text-align: center;
-        padding-top: 3rem;
-        color: white; }
-        .about__content--odometro__fill:nth-child(2) {
-          background-color: #090917; }
 
-.experience__content {
+.odometro__content {
   width: 530px;
   margin: 8rem auto; }
-  .experience__content--top {
+  .odometro__content--top {
     margin: 0 auto 7rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .experience__content--top__container {
+    .odometro__content--top__container {
       display: flex;
       flex-direction: column; }
-      .experience__content--top__container span {
+      .odometro__content--top__container span {
         font-size: 1.2rem;
         font-weight: bold; }
-    .experience__content--top .digit {
+    .odometro__content--top .digit {
       color: #5d5fef;
       font-weight: 500;
       font-size: 3.4rem;
       line-height: 4.1rem; }
-    .experience__content--top__hours {
+    .odometro__content--top__hours {
       position: relative; }
-      .experience__content--top__hours .year {
+      .odometro__content--top__hours .year {
         position: relative; }
-        .experience__content--top__hours .year::after {
+        .odometro__content--top__hours .year::after {
           content: "2022";
           position: absolute;
           top: -50px;
           font-weight: bold;
           left: 0; }
-  .experience__content--bottom {
+  .odometro__content--bottom {
     width: 380px;
     margin: 0 auto;
     display: flex;
     flex-direction: column; }
-    .experience__content--bottom__slider {
+    .odometro__content--bottom__slider {
       width: 100%;
       background-color: gray;
       height: 6px;
       position: relative; }
-      .experience__content--bottom__slider::after {
+      .odometro__content--bottom__slider::after {
         content: "";
         width: 44px;
         position: absolute;
@@ -242,7 +231,7 @@ a {
         z-index: 9;
         left: 0;
         background-color: #f20574; }
-    .experience__content--bottom__info {
+    .odometro__content--bottom__info {
       height: 4rem;
       width: 100%;
       margin-top: 1rem;
@@ -252,7 +241,7 @@ a {
       border: 1px solid #ef5da8;
       font-size: 1.2rem;
       font-weight: 400; }
-    .experience__content--bottom__teacher {
+    .odometro__content--bottom__teacher {
       font-size: 1rem;
       margin-top: 2rem; }
 

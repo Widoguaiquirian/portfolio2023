@@ -22,13 +22,27 @@
       align-items: end;
       justify-content: center;
 
-      &--odometro {
+      &--graph {
          width: 143px;
          height: 143px;
-         // background: linear-gradient(#e85f64, #0a99f8);
+         background: linear-gradient(#e85f64, #0a99f8);
          border-radius: 50%;
          position: relative;
 
+         // Vertical line
+         &::before {
+            content: "";
+            background-color: black;
+            width: 1px;
+            height: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 225%);
+            z-index: 1;
+         }
+
+         // The line
          &::after {
             content: "";
             position: absolute;
@@ -38,73 +52,18 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: -1;
          }
 
          &__inner {
             position: absolute;
-            background-color: rgba(57, 224, 6, 0.829);
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             width: 130px;
             height: 130px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
-            &::after {
-               content: "";
-               background-color: black;
-               width: 1px;
-               height: 2rem;
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%, 225%);
-            }
-         }
-
-         &__fill {
-            position: absolute;
-            font-size: 2rem;
-            height: 360px;
-            width: 206px;
-            clip-path: polygon(50% 100%, 0 0, 100% 0);
-            top: -50%;
-            left: 50%;
-            transform: translate(-50%, -60%);
-
-            text-align: center;
-            padding-top: 3rem;
-            color: white;
-
-            // HTML 5
-            &:nth-child(2) {
-               background-color: #090917;
-            }
-
-            // // CSS 3
-            // &:nth-child(3) {
-            //    background-color: #25265f;
-            // }
-
-            // // JS
-            // &:nth-child(4) {
-            //    background-color: #4a4cbf;
-            // }
-
-            // // Sass
-            // &:nth-child(5) {
-            //    background-color: #5d5fef;
-            // }
-
-            // // React
-            // &:nth-child(6) {
-            //    background-color: #9d9ff5;
-            // }
-
-            // // Others
-            // &:nth-child(7) {
-            //    background-color: #dedffb;
-            // }
          }
       }
    }
