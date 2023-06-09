@@ -1,9 +1,17 @@
 .sidebar {
-   border: 1px solid red;
-   width: fit-content;
-   height: min-content;
-   position: fixed;
-   left: 10vh;
-   text-align: center;
-   top: 50%;
+   position: sticky;
+   top: 50px;
+   margin-top: 400px;
+   height: 400px;
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--item {
+         margin: 1rem 0;
+      }
+   }
 }

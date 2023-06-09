@@ -29,8 +29,14 @@ img[alt=""] {
    outline-offset: 15px;
 }
 
-main {
+.wrapper {
+   display: flex;
    max-width: 1200px;
+   margin: 0 auto;
+}
+
+main {
+   max-width: 1156px;
    margin: 0 auto;
    padding: 0 clamp(0.5rem, 40vh, 15rem);
 }
