@@ -86,15 +86,18 @@
 
          &__boxes {
             width: 100%;
+
             &--box {
                border: 1px solid #ef5da8;
                height: 40px;
                width: 100%;
-               text-align: center;
                transform: rotateX(180deg) translateY(-50px);
+               display: flex;
+               align-items: center;
+               justify-content: center;
 
                img {
-                  margin-left: 1rem;
+                  margin-left: 2rem;
                }
             }
 
