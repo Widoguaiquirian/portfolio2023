@@ -1,46 +1,46 @@
-header {
-   background-color: #0c0c0c;
-   height: 990px;
-   max-height: 100vh;
-   width: 160rem;
-   max-width: 100%;
-   margin: 0 auto;
-   position: relative;
+// header {
+//    background-color: #0c0c0c;
+//    height: 990px;
+//    max-height: 100vh;
+//    width: 160rem;
+//    max-width: 100%;
+//    margin: 0 auto;
+//    position: relative;
 
-   .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+//    .hero {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
 
-      max-width: 95%;
-      margin: 0 auto;
+//       max-width: 95%;
+//       margin: 0 auto;
 
-      &__scroll {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, 392%);
-         width: 39.8px;
-         height: 76px;
-         border: 2px solid var(--bg-color);
-         border-radius: 15px;
+//       &__scroll {
+//          position: absolute;
+//          top: 50%;
+//          left: 50%;
+//          transform: translate(-50%, 392%);
+//          width: 39.8px;
+//          height: 76px;
+//          border: 2px solid var(--bg-color);
+//          border-radius: 15px;
 
-         &::after {
-            content: "";
-            position: absolute;
-            width: 7.24px;
-            border-radius: 50%;
-            height: 7.24px;
-            background-color: var(--bg-color);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: scrollDown;
-            animation-timing-function: ease-in-out;
-            animation-duration: 3s;
-            animation-fill-mode: backwards;
-            animation-iteration-count: infinite;
-         }
-      }
-   }
-}
+//          &::after {
+//             content: "";
+//             position: absolute;
+//             width: 7.24px;
+//             border-radius: 50%;
+//             height: 7.24px;
+//             background-color: var(--bg-color);
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             animation: scrollDown;
+//             animation-timing-function: ease-in-out;
+//             animation-duration: 3s;
+//             animation-fill-mode: backwards;
+//             animation-iteration-count: infinite;
+//          }
+//       }
+//    }
+// }

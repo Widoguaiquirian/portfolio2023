@@ -76,43 +76,47 @@
       &--bottom {
          width: 380px;
          margin: 0 auto;
-         display: flex;
-         flex-direction: column;
+         height: 110px;
+         font-size: 1.2rem;
+         display: grid;
+         grid-auto-flow: column;
+         overflow-x: auto;
+         grid-auto-columns: 100%;
+         transform: rotateX(180deg);
 
-         &__slider {
+         &__boxes {
             width: 100%;
-            background-color: gray;
-            height: 6px;
-            position: relative;
+            &--box {
+               border: 1px solid #ef5da8;
+               height: 40px;
+               width: 100%;
+               text-align: center;
+               transform: rotateX(180deg) translateY(-50px);
 
-            &::after {
-               content: "";
-               width: 44px;
-               position: absolute;
-               top: 0;
-               height: 6px;
-               z-index: 9;
-               left: 0;
-               background-color: #f20574;
+               img {
+                  margin-left: 1rem;
+               }
+            }
+
+            &--teacher {
+               margin-top: 2rem;
+               margin-left: 4rem;
+               transform: rotateX(180deg) translateY(50px);
             }
          }
+      }
 
-         &__info {
-            height: 4rem;
-            width: 100%;
-            margin-top: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            border: 1px solid #ef5da8;
-            font-size: 1.2rem;
-            font-weight: 400;
-         }
+      .scrollbar::-webkit-scrollbar {
+         width: 380px;
+         height: 6px;
+      }
 
-         &__teacher {
-            font-size: 1rem;
-            margin-top: 2rem;
-         }
+      .scrollbar::-webkit-scrollbar-track {
+         background-color: #878787;
+      }
+
+      .scrollbar::-webkit-scrollbar-thumb {
+         background-color: #f20574;
       }
    }
 }
