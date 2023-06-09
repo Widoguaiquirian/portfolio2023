@@ -472,3 +472,14 @@ header {
     align-items: center; }
     .sidebar__list--item {
       margin: 1rem 0; }
+    .sidebar__list .pipe {
+      height: 57px;
+      width: 1px;
+      background-color: black; }
+    .sidebar__list .stay {
+      margin: 5rem 0;
+      font-size: 1.4rem;
+      width: 110px;
+      font-weight: bold;
+      text-align: center;
+      transform: rotate(-90deg); }

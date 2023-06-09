@@ -13,5 +13,20 @@
       &--item {
          margin: 1rem 0;
       }
+
+      .pipe {
+         height: 57px;
+         width: 1px;
+         background-color: black;
+      }
+
+      .stay {
+         margin: 5rem 0;
+         font-size: 1.4rem;
+         width: 110px;
+         font-weight: bold;
+         text-align: center;
+         transform: rotate(-90deg);
+      }
    }
 }
