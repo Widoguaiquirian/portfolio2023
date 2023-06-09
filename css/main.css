@@ -185,9 +185,40 @@ a {
         left: 50%;
         transform: translate(-50%, -50%); }
 
+.odometro__title {
+  margin: 0 auto;
+  position: relative;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3.3rem);
+  line-height: 3.5rem;
+  color: var(--tertiary-color-dark);
+  letter-spacing: 0.02em;
+  margin-bottom: 5rem;
+  font-size: 2.8rem;
+  width: max-content; }
+  .odometro__title span {
+    color: var(--call-to-action); }
+  .odometro__title::before {
+    content: " 0110100";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    color: #878787;
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .odometro__title::after {
+    content: " 0101001";
+    position: absolute;
+    top: 0;
+    right: -80px;
+    color: #878787;
+    font-size: 1.6rem;
+    font-weight: 500; }
+
 .odometro__content {
   width: 530px;
-  margin: 8rem auto; }
+  margin: 0 auto; }
   .odometro__content--top {
     margin: 0 auto 7rem auto;
     display: flex;
@@ -240,7 +271,7 @@ a {
       margin-top: 1rem;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       border: 1px solid #ef5da8;
       font-size: 1.2rem;
       font-weight: 400; }
@@ -303,7 +334,18 @@ a {
       .footer__content--contact__graph {
         width: 150px;
         height: 150px;
-        margin-right: 3rem; }
+        margin-right: 3rem;
+        position: relative; }
+        .footer__content--contact__graph--semi {
+          height: 125px;
+          width: 60px;
+          border: 1px solid #c9a3b5c2;
+          position: absolute;
+          border-radius: 80px 0 0 80px;
+          border-right: 0;
+          top: 50%;
+          left: 50%;
+          transform: translate(-135%, -50%) scale(1.5); }
       .footer__content--contact__info {
         width: 160px; }
         .footer__content--contact__info h5 {
