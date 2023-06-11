@@ -1,5 +1,5 @@
 .odometro {
-   &__title {
+   &-title {
       margin: 0 auto;
       position: relative;
       @include heading-h4;
@@ -28,37 +28,33 @@
       }
    }
 
-   &__content {
+   &-content {
       width: 530px;
       margin: 0 auto;
 
-      &--top {
+      .content-top {
          margin: 0 auto 7rem auto;
          display: flex;
          justify-content: space-between;
          align-items: center;
 
-         &__container {
+         .top-section {
             display: flex;
             flex-direction: column;
 
             span {
                font-size: 1.2rem;
-               font-weight: bold;
-               margin-bottom: 1rem;
+            }
+
+            .digit {
+               color: #5d5fef;
+               font-weight: 500;
+               font-size: 3.4rem;
+               line-height: 4.1rem;
             }
          }
 
-         .digit {
-            color: #5d5fef;
-            font-weight: 500;
-            font-size: 3.4rem;
-            line-height: 4.1rem;
-         }
-
-         &__hours {
-            position: relative;
-
+         .section-hours {
             .year {
                position: relative;
 
@@ -73,53 +69,48 @@
          }
       }
 
-      &--bottom {
+      .content-bottom {
          width: 380px;
          margin: 0 auto;
-         height: 100px;
+         height: 60px;
          font-size: 1.2rem;
-         display: grid;
-         grid-auto-flow: column;
-         overflow-x: auto;
-         grid-auto-columns: 100%;
-         transform: rotateX(180deg);
 
-         &__boxes {
+         .bottom-progress {
+            width: 380px;
+            height: 6px;
+            background-color: gray;
+            display: flex;
+
+            .progress-element {
+               flex: 1;
+            }
+
+            .progress-element.active {
+               background-color: red;
+            }
+         }
+
+         .bottom-boxes {
             width: 100%;
 
-            &--box {
-               border: 1px solid #ef5da8;
+            .boxes-box {
                height: 40px;
                width: 100%;
-               transform: rotateX(180deg) translateY(-50px);
                display: flex;
                align-items: center;
                justify-content: center;
+               border: 1px solid #ef5da8;
 
                img {
                   margin-left: 2rem;
                }
             }
 
-            &--teacher {
+            .boxes-teacher {
                margin-top: 2rem;
                margin-left: 4rem;
-               transform: rotateX(180deg) translateY(50px);
             }
          }
-      }
-
-      .scrollbar::-webkit-scrollbar {
-         width: 380px;
-         height: 6px;
-      }
-
-      .scrollbar::-webkit-scrollbar-track {
-         background-color: #878787;
-      }
-
-      .scrollbar::-webkit-scrollbar-thumb {
-         background-color: #f20574;
       }
    }
 }
