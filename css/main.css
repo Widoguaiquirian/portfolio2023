@@ -259,55 +259,55 @@ a {
 .odometro-content {
   width: 530px;
   margin: 0 auto; }
-  .odometro-content .content-top {
+  .odometro-content-top {
     margin: 0 auto 7rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .odometro-content .content-top .top-section {
+    .odometro-content-top-section {
       display: flex;
       flex-direction: column; }
-      .odometro-content .content-top .top-section span {
-        font-size: 1.2rem; }
-      .odometro-content .content-top .top-section .digit {
+      .odometro-content-top-section-digit {
         color: #5d5fef;
         font-weight: 500;
         font-size: 3.4rem;
         line-height: 4.1rem; }
-    .odometro-content .content-top .section-hours .year {
+      .odometro-content-top-section span {
+        font-size: 1.2rem; }
+    .odometro-content-top .section-hours .year {
       position: relative; }
-      .odometro-content .content-top .section-hours .year::after {
+      .odometro-content-top .section-hours .year::after {
         content: "2022";
         position: absolute;
         top: -70px;
         font-weight: bold;
         left: 0; }
-  .odometro-content .scroll-slides {
+  .odometro-content-slides {
     width: 380px;
     margin: 0 auto;
     height: 60px;
     font-size: 1.2rem; }
-    .odometro-content .scroll-slides .slides-progress {
+    .odometro-content-slides .slides-progress {
       width: 380px;
       height: 6px;
       background-color: gray;
       display: flex; }
-      .odometro-content .scroll-slides .slides-progress .progress-element {
+      .odometro-content-slides .slides-progress .progress-element {
         flex: 1; }
-      .odometro-content .scroll-slides .slides-progress .progress-element.active {
+      .odometro-content-slides .slides-progress .progress-element.active {
         background-color: red; }
-    .odometro-content .scroll-slides .slides-container {
+    .odometro-content-slides .slides-container {
       padding: 1rem 0;
       overflow: hidden;
       display: flex;
       justify-content: space-between; }
-      .odometro-content .scroll-slides .slides-container .container-wrapper {
+      .odometro-content-slides .slides-container .container-wrapper {
         min-width: 300px;
         transition: all 0.4s ease;
         display: flex; }
-        .odometro-content .scroll-slides .slides-container .container-wrapper .container-boxes {
+        .odometro-content-slides .slides-container .container-wrapper .container-boxes {
           min-width: 100%; }
-          .odometro-content .scroll-slides .slides-container .container-wrapper .container-boxes .boxes-box {
+          .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-box {
             display: flex;
             width: 100%;
             justify-content: center;
@@ -315,9 +315,9 @@ a {
             align-items: center;
             margin-bottom: 2rem;
             border: 1px solid red; }
-            .odometro-content .scroll-slides .slides-container .container-wrapper .container-boxes .boxes-box img {
+            .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-box img {
               margin-left: 2rem; }
-          .odometro-content .scroll-slides .slides-container .container-wrapper .container-boxes .boxes-teacher {
+          .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-teacher {
             margin-left: 3rem; }
 
 .hr {

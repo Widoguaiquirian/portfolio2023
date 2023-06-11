@@ -32,25 +32,25 @@
       width: 530px;
       margin: 0 auto;
 
-      .content-top {
+      &-top {
          margin: 0 auto 7rem auto;
          display: flex;
          justify-content: space-between;
          align-items: center;
 
-         .top-section {
+         &-section {
             display: flex;
             flex-direction: column;
 
-            span {
-               font-size: 1.2rem;
-            }
-
-            .digit {
+            &-digit {
                color: #5d5fef;
                font-weight: 500;
                font-size: 3.4rem;
                line-height: 4.1rem;
+            }
+
+            span {
+               font-size: 1.2rem;
             }
          }
 
@@ -69,7 +69,7 @@
          }
       }
 
-      .scroll-slides {
+      &-slides {
          width: 380px;
          margin: 0 auto;
          height: 60px;
