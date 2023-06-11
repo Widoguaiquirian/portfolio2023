@@ -1,6 +1,6 @@
 .about {
    width: 100%;
-   margin-bottom: 24rem;
+   margin-bottom: 17rem;
 
    &__title {
       @include heading-h2;
@@ -18,11 +18,61 @@
 
    &__content {
       width: 767px;
-      height: 390px;
+      height: 480px;
       margin: 2rem auto;
       display: flex;
       align-items: end;
       justify-content: center;
+      position: relative;
+
+      .percentageIcon {
+         position: absolute;
+         top: 30%;
+         left: 70%;
+         font-size: 1.9rem;
+         font-weight: bold;
+         z-index: 10;
+      }
+
+      &--svgs {
+         position: absolute;
+         width: 767px;
+         height: 72px;
+         z-index: -1;
+
+         .images {
+            position: absolute;
+            top: -178px;
+            left: 32px;
+
+            z-index: 9;
+
+            &:nth-child(2) {
+               top: -244px;
+               left: 141px;
+            }
+
+            &:nth-child(3) {
+               top: -249px;
+               left: 261px;
+            }
+
+            &:nth-child(4) {
+               top: -381px;
+               left: 383px;
+            }
+
+            &:nth-child(5) {
+               top: -187px;
+               left: 384px;
+            }
+
+            &:nth-child(6) {
+               top: -161px;
+               left: 384px;
+            }
+         }
+      }
 
       &--graph {
          width: 143px;
@@ -34,14 +84,14 @@
          // Vertical line
          &::before {
             content: "";
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             width: 1px;
             height: 2rem;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, 225%);
-            z-index: 1;
+            transform: translate(-50%, 222%);
+            z-index: 9;
          }
 
          // The line
@@ -50,11 +100,11 @@
             position: absolute;
             width: 722px;
             height: 1px;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: -1;
+            z-index: 7;
          }
 
          &__inner {
@@ -66,6 +116,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 8;
+            text-align: right;
          }
       }
    }

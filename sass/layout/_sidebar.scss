@@ -1,8 +1,13 @@
 .sidebar {
    position: sticky;
    top: 50px;
-   margin-top: 400px;
-   height: 400px;
+   margin-top: 1030px;
+   height: 173px;
+   width: 53px;
+   border-radius: 25px;
+   border: 1px solid #f20574;
+   display: flex;
+   justify-content: center;
 
    &__list {
       display: flex;
@@ -11,7 +16,11 @@
       align-items: center;
 
       &--item {
-         margin: 1rem 0;
+         margin: 0.6rem 0;
+
+         &__link {
+            color: black;
+         }
       }
 
       .pipe {
