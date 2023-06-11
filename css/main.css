@@ -225,7 +225,7 @@ a {
           top: -161px;
           left: 384px; }
 
-.odometro-title {
+.odometro-hero {
   margin: 0 auto;
   position: relative;
   font-weight: 600;
@@ -237,9 +237,9 @@ a {
   margin-bottom: 5rem;
   font-size: 2.8rem;
   width: max-content; }
-  .odometro-title span {
+  .odometro-hero span {
     color: var(--call-to-action); }
-  .odometro-title::before {
+  .odometro-hero::before {
     content: " 0110100";
     position: absolute;
     top: 0;
@@ -247,7 +247,7 @@ a {
     color: #878787;
     font-size: 1.6rem;
     font-weight: 500; }
-  .odometro-title::after {
+  .odometro-hero::after {
     content: " 0101001";
     position: absolute;
     top: 0;
@@ -282,32 +282,32 @@ a {
         top: -70px;
         font-weight: bold;
         left: 0; }
-  .odometro-content .content-bottom {
+  .odometro-content .scroll-slides {
     width: 380px;
     margin: 0 auto;
     height: 60px;
     font-size: 1.2rem; }
-    .odometro-content .content-bottom .bottom-progress {
+    .odometro-content .scroll-slides .slides-progress {
       width: 380px;
       height: 6px;
       background-color: gray;
       display: flex; }
-      .odometro-content .content-bottom .bottom-progress .progress-element {
+      .odometro-content .scroll-slides .slides-progress .progress-element {
         flex: 1; }
-      .odometro-content .content-bottom .bottom-progress .progress-element.active {
+      .odometro-content .scroll-slides .slides-progress .progress-element.active {
         background-color: red; }
-    .odometro-content .content-bottom .bottom-boxes {
+    .odometro-content .scroll-slides .slides-boxes {
       width: 100%; }
-      .odometro-content .content-bottom .bottom-boxes .boxes-box {
+      .odometro-content .scroll-slides .slides-boxes .boxes-box {
         height: 40px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #ef5da8; }
-        .odometro-content .content-bottom .bottom-boxes .boxes-box img {
+        .odometro-content .scroll-slides .slides-boxes .boxes-box img {
           margin-left: 2rem; }
-      .odometro-content .content-bottom .bottom-boxes .boxes-teacher {
+      .odometro-content .scroll-slides .slides-boxes .boxes-teacher {
         margin-top: 2rem;
         margin-left: 4rem; }
 

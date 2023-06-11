@@ -1,5 +1,5 @@
 .odometro {
-   &-title {
+   &-hero {
       margin: 0 auto;
       position: relative;
       @include heading-h4;
@@ -69,13 +69,13 @@
          }
       }
 
-      .content-bottom {
+      .scroll-slides {
          width: 380px;
          margin: 0 auto;
          height: 60px;
          font-size: 1.2rem;
 
-         .bottom-progress {
+         .slides-progress {
             width: 380px;
             height: 6px;
             background-color: gray;
@@ -90,7 +90,7 @@
             }
          }
 
-         .bottom-boxes {
+         .slides-boxes {
             width: 100%;
 
             .boxes-box {
