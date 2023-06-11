@@ -62,30 +62,30 @@
       <header>
          <!-- Hero section -->
          <div class="hero">
-            <div class="scroll-animation"> </div>
+            <div class="hero-scroll"> </div>
          </div>
       </header>
 
       <main>
          <div class="sidebar">
             <ul class="sidebar-list">
-               <li class="list-item">
-                  <a href="#" class="item-link">
+               <li class="sidebar-list-item">
+                  <a href="#" class="sidebar-list-item-link">
                      <img src="/images/sidebar/download-icon.svg" alt="sidebar-icons" />
                   </a>
                </li>
-               <li class="list-item">
-                  <a href="#" class="item-link">
+               <li class="sidebar-list-item">
+                  <a href="#" class="sidebar-list-item-link">
                      <img src="/images/sidebar/print-icon.svg" alt="sidebar-icons" />
                   </a>
                </li>
-               <li class="list-item">
-                  <a href="#" class="item-link">
+               <li class="sidebar-list-item">
+                  <a href="#" class="sidebar-list-item-link">
                      <img src="/images/sidebar/share-icon.svg" alt="sidebar-icons" />
                   </a>
                </li>
-               <li class="list-item">
-                  <a href="#" class="item-link"> [EN] </a>
+               <li class="sidebar-list-item">
+                  <a href="#" class="sidebar-list-item-link"> [EN] </a>
                </li>
             </ul>
          </div>
@@ -93,17 +93,17 @@
          <div class="wrapper">
             <section class="intro">
                <div class="intro-content">
-                  <div class="content-container-img">
+                  <div class="intro-content-img">
                      <img src="/images/banners/mirada.png" alt="LG eyes picture" />
                   </div>
-                  <div class="content-info">
-                     <h4 class="title"> <span> Please get to </span> know me.</h4>
-                     <p class="paragraph"
+                  <div class="intro-content-info">
+                     <h4 class="intro-content-info-title"> <span> Please get to </span> know me.</h4>
+                     <p class="intro-content-info-para"
                         >My name is Luis, and I'll be your best programmer if you want me to. My career as a web
                         developer started years ago. I continue to study working at different companies and looking at
                         their needs. Today, I continue to leverage myself to be the best front-end web developer.</p
                      >
-                     <span class="note"
+                     <span class="intro-content-info-note"
                         >I'm ready to participate on a team or do freelance job as need it. - contact me to at
                         <a href="mailto:luisgcode@gmail.com">@luisgcode</a>
                      </span>
@@ -117,27 +117,27 @@
                <p class="about-subheading">A continued Working Process</p>
 
                <div class="about-content">
-                  <div class="content-graph">
-                     <div class="graph-inner"> </div>
-                     <div class="graph-percentage-icon">%</div>
+                  <div class="about-content-graph">
+                     <div class="about-content-graph-inner"> </div>
+                     <div class="about-content-graph-icon">%</div>
                   </div>
 
-                  <div class="content-bars">
-                     <img src="images/html.svg" alt="svg" class="bars-image" />
-                     <img src="images/css.svg" alt="svg" class="bars-image" />
-                     <img src="images/js.svg" alt="svg" class="bars-image" />
-                     <img src="images/sass.svg" alt="svg" class="bars-image" />
-                     <img src="images/react.svg" alt="svg" class="bars-image" />
-                     <img src="images/others.svg" alt="svg" class="bars-image" />
+                  <div class="about-content-bars">
+                     <img src="images/html.svg" alt="svg" class="about-content-bars-img" />
+                     <img src="images/css.svg" alt="svg" class="about-content-bars-img" />
+                     <img src="images/js.svg" alt="svg" class="about-content-bars-img" />
+                     <img src="images/sass.svg" alt="svg" class="about-content-bars-img" />
+                     <img src="images/react.svg" alt="svg" class="about-content-bars-img" />
+                     <img src="images/others.svg" alt="svg" class="about-content-bars-img" />
                   </div>
                </div>
             </section>
 
             <section class="abilities">
                <div class="abilities-content">
-                  <h4 class="content-title"> <span>Abil</span>ities</h4>
-                  <h4 class="content-heading">Grow for trust</h4>
-                  <p class="content-para"
+                  <h4 class="abilities-content-title"> <span>Abil</span>ities</h4>
+                  <h4 class="abilities-content-heading">Grow for trust</h4>
+                  <p class="abilities-content-para"
                      >Empathy and teamwork come naturally to me. I am good at expressing ideas; I speak Spanish and
                      fluent in English 50% writing, reading, and speaking. I'm good at problem-solving, and I am a
                      persevering person, motivated always to do the best of my knowledge and find the solution needed.
@@ -173,6 +173,8 @@
                      </div>
                   </div>
 
+                  <!-- FROM HERE IS THE SLIDE COMPONENT -->
+
                   <div class="scroll-slides ">
                      <!-- Progress -->
                      <div class="slides-progress">
@@ -183,48 +185,53 @@
                         <div class="progress-element "></div>
                      </div>
 
-                     <!-- 1 -->
-                     <div class="slides-boxes">
-                        <div class="boxes-box">
-                           <span>The Complete Web development Boot Camp</span>
-                           <img src="images/icons/check.svg" alt="Check" />
-                        </div>
-                        <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
-                     </div>
+                     <div class="slides-container">
+                        <div class="container-wrapper">
+                           <!-- 1 -->
+                           <div class="container-boxes">
+                              <div class="boxes-box">
+                                 <span>The Complete Web development Boot Camp</span>
+                                 <img src="images/icons/check.svg" alt="Check" />
+                              </div>
+                              <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
+                           </div>
 
-                     <!-- 2 -->
-                     <div class="slides-boxes">
-                        <div class="boxes-box">
-                           <span>The Complete Web development Boot Camp</span>
-                           <img src="images/icons/check.svg" alt="Check" />
-                        </div>
-                        <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
-                     </div>
+                           <!-- 2 -->
+                           <div class="container-boxes">
+                              <div class="boxes-box">
+                                 <span>The Complete Web development Boot Camp</span>
+                                 <img src="images/icons/check.svg" alt="Check" />
+                              </div>
+                              <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
+                           </div>
 
-                     <!-- 3 -->
-                     <div class="slides-boxes">
-                        <div class="boxes-box">
-                           <span>The Complete Web development Boot Camp</span>
-                           <img src="images/icons/check.svg" alt="Check" />
-                        </div>
-                        <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
-                     </div>
+                           <!-- 3 -->
+                           <div class="container-boxes">
+                              <div class="boxes-box">
+                                 <span>The Complete Web development Boot Camp</span>
+                                 <img src="images/icons/check.svg" alt="Check" />
+                              </div>
+                              <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
+                           </div>
 
-                     <!-- 4 -->
-                     <div class="slides-boxes">
-                        <div class="boxes-box">
-                           <span>The Complete Web development Boot Camp</span>
-                           <img src="images/icons/check.svg" alt="Check" />
+                           <!-- 4 -->
+                           <div class="container-boxes">
+                              <div class="boxes-box">
+                                 <span>The Complete Web development Boot Camp</span>
+                                 <img src="images/icons/check.svg" alt="Check" />
+                              </div>
+                              <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
+                           </div>
+
+                           <!-- 5 -->
+                           <div class="container-boxes">
+                              <div class="boxes-box">
+                                 <span>The Complete Web development Boot Camp</span>
+                                 <img src="images/icons/check.svg" alt="Check" />
+                              </div>
+                              <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
+                           </div>
                         </div>
-                        <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
-                     </div>
-                     <!-- 5 -->
-                     <div class="slides-boxes">
-                        <div class="boxes-box">
-                           <span>The Complete Web development Boot Camp</span>
-                           <img src="images/icons/check.svg" alt="Check" />
-                        </div>
-                        <div class="boxes-teacher"> Dr. Angela Yu : Certificate </div>
                      </div>
                   </div>
                </div>
@@ -233,37 +240,37 @@
       </main>
 
       <span class="hr">
-         <img class="hr__img" src="images/icons/car-icon.svg" alt="car icon" />
+         <img class="hr-img" src="images/icons/car-icon.svg" alt="car icon" />
       </span>
 
       <footer class="footer">
-         <div class="footer__content">
-            <div class="footer__content--logo">
+         <div class="footer-content">
+            <div class="footer-content-logo">
                <img src="images/logos/idraft-logo.svg" alt="Idraft logo" />
             </div>
-            <div class="footer__content--info">
-               <ul class="footer__content--info__list">
-                  <li class="footer__content--info__list--item">
-                     <a href="#" class="footer__content--info__list--item__link">About Me</a>
+            <div class="footer-content-info">
+               <ul class="footer-content-info-list">
+                  <li class="footer-content-info-list-item">
+                     <a href="#" class="footer-content-info-list-item-link">About Me</a>
                   </li>
-                  <li class="footer__content--info__list--item">
-                     <a href="#" class="footer__content--info__list--item__link">Coding for Me</a>
+                  <li class="footer-content-info-list-item">
+                     <a href="#" class="footer-content-info-list-item-link">Coding for Me</a>
                   </li>
-                  <li class="footer__content--info__list--item">
-                     <a href="#" class="footer__content--info__list--item__link">Laborum</a>
+                  <li class="footer-content-info-list-item">
+                     <a href="#" class="footer-content-info-list-item-link">Laborum</a>
                   </li>
                </ul>
-               <p class="footer__content--info__para">
+               <p class="footer-content-info-para">
                   <b> Luis Code </b> is a starting site leader for a fronted web developer Luis D. G. and colaboration
                   web designer Iraku - A. Mejias Photography: Jose xxx
                </p>
             </div>
-            <div class="footer__content--contact">
-               <div class="footer__content--contact__graph">
-                  <div class="footer__content--contact__graph--semi"></div>
+            <div class="footer-content-coder">
+               <div class="footer-content-coder-graph">
+                  <div class="footer-content-coder-graph-user"></div>
                   <img src="images/contact-me.svg" alt="me photo" />
                </div>
-               <div class="footer__content--contact__info">
+               <div class="footer-content-coder-info">
                   <h5>Get in Touch</h5>
                   <span
                      >For any project inquiry or for more information about what I do, please feel free to get in
@@ -272,11 +279,9 @@
                </div>
             </div>
          </div>
-         <div class="footer__bottom">
-            <div class="footer__bottom--copy"
-               >C 2023 <span> Idraft.</span> All Right Reserved Created with love in home</div
-            >
-            <div class="footer__bottom--license">Creative Commons Attribution 4.0 International web License.</div>
+         <div class="footer-copy">
+            <div>C 2023 <span> Idraft.</span> All Right Reserved Created with love in home</div>
+            <div>Creative Commons Attribution 4.0 International web License.</div>
          </div>
       </footer>
 

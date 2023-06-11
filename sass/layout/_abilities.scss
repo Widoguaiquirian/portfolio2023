@@ -4,16 +4,16 @@
    &-content {
       width: 100%;
 
-      .content-title {
+      &-title {
          @include heading-h4;
       }
 
-      .content-heading {
+      &-heading {
          @include subheading-shd;
          margin-bottom: 1rem;
       }
 
-      .content-para {
+      &-para {
          @include regular-btl;
       }
    }

@@ -90,25 +90,38 @@
             }
          }
 
-         .slides-boxes {
-            width: 100%;
+         .slides-container {
+            padding: 1rem 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
 
-            .boxes-box {
-               height: 40px;
-               width: 100%;
+            .container-wrapper {
+               min-width: 300px;
+               transition: all 0.4s ease;
                display: flex;
-               align-items: center;
-               justify-content: center;
-               border: 1px solid #ef5da8;
 
-               img {
-                  margin-left: 2rem;
+               .container-boxes {
+                  min-width: 100%;
+
+                  .boxes-box {
+                     display: flex;
+                     width: 100%;
+                     justify-content: center;
+                     padding: 1rem 0;
+                     align-items: center;
+                     margin-bottom: 2rem;
+                     border: 1px solid red;
+
+                     img {
+                        margin-left: 2rem;
+                     }
+                  }
+
+                  .boxes-teacher {
+                     margin-left: 3rem;
+                  }
                }
-            }
-
-            .boxes-teacher {
-               margin-top: 2rem;
-               margin-left: 4rem;
             }
          }
       }

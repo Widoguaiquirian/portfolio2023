@@ -10,7 +10,7 @@
       justify-content: space-around;
       gap: 2rem;
 
-      .content-container-img {
+      &-img {
          display: flex;
          justify-content: space-around;
          width: 428px;
@@ -24,22 +24,22 @@
          }
       }
 
-      .content-info {
+      &-info {
          flex-basis: 50%;
          height: 256px;
          display: flex;
          flex-direction: column;
          justify-content: space-between;
 
-         .title {
+         &-title {
             @include heading-h4;
          }
 
-         .para {
+         &-para {
             @include regular-btm;
          }
 
-         .note {
+         &-note {
             @include text-note;
             padding-top: 1.4rem;
             border-top: 1px solid rgba(0, 0, 0, 0.5);

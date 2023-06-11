@@ -25,14 +25,14 @@
       justify-content: center;
       position: relative;
 
-      .content-graph {
+      &-graph {
          width: 143px;
          height: 143px;
          background: linear-gradient(#e85f64, #0a99f8);
          border-radius: 50%;
          position: relative;
 
-         .graph-inner {
+         &-inner {
             position: absolute;
             background-color: rgb(255, 255, 255);
             border-radius: 50%;
@@ -45,7 +45,7 @@
             text-align: right;
          }
 
-         .graph-percentage-icon {
+         &-icon {
             position: absolute;
             top: 30%;
             left: 70%;
@@ -81,13 +81,13 @@
          }
       }
 
-      .content-bars {
+      &-bars {
          position: absolute;
          width: 767px;
          height: 72px;
          z-index: -1;
 
-         .bars-image {
+         &-img {
             position: absolute;
             top: -178px;
             left: 32px;

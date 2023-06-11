@@ -6,7 +6,7 @@
    margin: 13rem auto;
    position: relative;
 
-   &__img {
+   &-img {
       position: absolute;
       left: 0;
       top: -42px;
@@ -32,22 +32,25 @@
    background-color: #eeeffd4d;
    font-family: "Montserrat", sans-serif;
 
-   &__content {
+   &-content {
       width: 1300px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      &--info {
+      &-logo {
+      }
+
+      &-info {
          font-size: 1.4rem;
 
-         &__list {
+         &-list {
             display: flex;
             margin-bottom: 2rem;
 
-            &--item {
-               &__link {
+            &-item {
+               &-link {
                   font-weight: 600;
                   color: black;
                   margin-right: 4.3rem;
@@ -59,24 +62,24 @@
             }
          }
 
-         &__para {
+         &-para {
             font-weight: 500;
             line-height: 2.2rem;
             width: 434px;
          }
       }
 
-      &--contact {
+      &-coder {
          display: flex;
          align-items: center;
 
-         &__graph {
+         &-graph {
             width: 150px;
             height: 150px;
             margin-right: 3rem;
             position: relative;
 
-            &--semi {
+            &-user {
                height: 125px;
                width: 60px;
                border: 1px solid #c9a3b5c2;
@@ -90,7 +93,7 @@
             }
          }
 
-         &__info {
+         &-info {
             width: 160px;
 
             h5 {
@@ -106,7 +109,7 @@
       }
    }
 
-   &__bottom {
+   &-copy {
       width: 1300px;
       margin: 8rem auto 0 auto;
       display: flex;
