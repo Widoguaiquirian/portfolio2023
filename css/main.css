@@ -287,27 +287,27 @@ a {
     margin: 0 auto;
     height: 60px;
     font-size: 1.2rem; }
-    .odometro-content-slides .slides-progress {
+    .odometro-content-slides-progress {
       width: 380px;
       height: 6px;
       background-color: gray;
       display: flex; }
-      .odometro-content-slides .slides-progress .progress-element {
+      .odometro-content-slides-progress-element {
         flex: 1; }
-      .odometro-content-slides .slides-progress .progress-element.active {
-        background-color: red; }
-    .odometro-content-slides .slides-container {
+        .odometro-content-slides-progress-element.active {
+          background-color: red; }
+    .odometro-content-slides-container {
       padding: 1rem 0;
       overflow: hidden;
       display: flex;
       justify-content: space-between; }
-      .odometro-content-slides .slides-container .container-wrapper {
+      .odometro-content-slides-container-wrapper {
         min-width: 300px;
         transition: all 0.4s ease;
         display: flex; }
-        .odometro-content-slides .slides-container .container-wrapper .container-boxes {
+        .odometro-content-slides-container-wrapper-boxes {
           min-width: 100%; }
-          .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-box {
+          .odometro-content-slides-container-wrapper-boxes-box {
             display: flex;
             width: 100%;
             justify-content: center;
@@ -315,9 +315,9 @@ a {
             align-items: center;
             margin-bottom: 2rem;
             border: 1px solid red; }
-            .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-box img {
+            .odometro-content-slides-container-wrapper-boxes-box img {
               margin-left: 2rem; }
-          .odometro-content-slides .slides-container .container-wrapper .container-boxes .boxes-teacher {
+          .odometro-content-slides-container-wrapper-boxes-teacher {
             margin-left: 3rem; }
 
 .hr {

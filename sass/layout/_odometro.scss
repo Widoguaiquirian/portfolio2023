@@ -75,36 +75,36 @@
          height: 60px;
          font-size: 1.2rem;
 
-         .slides-progress {
+         &-progress {
             width: 380px;
             height: 6px;
             background-color: gray;
             display: flex;
 
-            .progress-element {
+            &-element {
                flex: 1;
-            }
 
-            .progress-element.active {
-               background-color: red;
+               &.active {
+                  background-color: red;
+               }
             }
          }
 
-         .slides-container {
+         &-container {
             padding: 1rem 0;
             overflow: hidden;
             display: flex;
             justify-content: space-between;
 
-            .container-wrapper {
+            &-wrapper {
                min-width: 300px;
                transition: all 0.4s ease;
                display: flex;
 
-               .container-boxes {
+               &-boxes {
                   min-width: 100%;
 
-                  .boxes-box {
+                  &-box {
                      display: flex;
                      width: 100%;
                      justify-content: center;
@@ -118,7 +118,7 @@
                      }
                   }
 
-                  .boxes-teacher {
+                  &-teacher {
                      margin-left: 3rem;
                   }
                }
