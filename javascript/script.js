@@ -105,3 +105,49 @@ const observer = new IntersectionObserver(activarOdometro, {
 });
 
 observer.observe(odometro);
+
+// Slide courses
+const elements = document.querySelectorAll(".odometro-content-slides-progress-element");
+const btnPrev = document.querySelector(".prev");
+const btnNext = document.querySelector(".next");
+const containerBox = document.querySelector(".odometro-content-slides-container-wrapper");
+const slides = document.querySelectorAll(".odometro-content-slides-container-wrapper-boxes");
+const currentslide = document.querySelector(".odometro-content-slides-counter-current");
+const maxSlides = document.querySelector(".odometro-content-slides-counter-number");
+
+let current = 1;
+
+maxSlides.innerHTML = `0${elements.length}`;
+currentslide.innerHTML = `0${current}`;
+
+btnNext.addEventListener("click", function () {
+   current++;
+
+   if (current > elements.length) {
+      current = 1;
+   }
+
+   update();
+});
+
+btnPrev.addEventListener("click", function () {
+   current--;
+
+   if (current < 1) {
+      current = 1;
+   }
+
+   update();
+});
+
+const update = function () {
+   elements.forEach(function (element, idx) {
+      if (idx < current) {
+         element.classList.add("active");
+         containerBox.style.marginLeft = `-${idx * 100}%`;
+         currentslide.innerHTML = `0${current}`;
+      } else {
+         element.classList.remove("active");
+      }
+   });
+};

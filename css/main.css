@@ -286,7 +286,13 @@ a {
     width: 380px;
     margin: 0 auto;
     height: 60px;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    position: relative; }
+    .odometro-content-slides-counter {
+      text-align: center;
+      margin-bottom: 1.7rem;
+      font-weight: bold;
+      font-size: 1.2rem; }
     .odometro-content-slides-progress {
       width: 380px;
       height: 6px;
@@ -295,14 +301,15 @@ a {
       .odometro-content-slides-progress-element {
         flex: 1; }
         .odometro-content-slides-progress-element.active {
-          background-color: red; }
+          background-color: #f20574;
+          transition: all 0.4s ease-in-out; }
     .odometro-content-slides-container {
       padding: 1rem 0;
       overflow: hidden;
       display: flex;
       justify-content: space-between; }
       .odometro-content-slides-container-wrapper {
-        min-width: 300px;
+        width: 380px;
         transition: all 0.4s ease;
         display: flex; }
         .odometro-content-slides-container-wrapper-boxes {
@@ -314,11 +321,35 @@ a {
             padding: 1rem 0;
             align-items: center;
             margin-bottom: 2rem;
-            border: 1px solid red; }
+            border: 1px solid #ef5da8; }
             .odometro-content-slides-container-wrapper-boxes-box img {
               margin-left: 2rem; }
           .odometro-content-slides-container-wrapper-boxes-teacher {
             margin-left: 3rem; }
+    .odometro-content-slides-btn {
+      position: absolute;
+      border: none;
+      background: transparent;
+      font-size: 3rem;
+      opacity: 50%;
+      animation-name: scaling;
+      animation-timing-function: ease;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      top: 80%;
+      cursor: pointer; }
+    .odometro-content-slides .prev {
+      left: -40px; }
+    .odometro-content-slides .next {
+      right: -40px; }
+
+@keyframes scaling {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
 
 .hr {
   width: 816px;

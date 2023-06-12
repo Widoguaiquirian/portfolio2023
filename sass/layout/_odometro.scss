@@ -74,6 +74,14 @@
          margin: 0 auto;
          height: 60px;
          font-size: 1.2rem;
+         position: relative;
+
+         &-counter {
+            text-align: center;
+            margin-bottom: 1.7rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+         }
 
          &-progress {
             width: 380px;
@@ -85,7 +93,8 @@
                flex: 1;
 
                &.active {
-                  background-color: red;
+                  background-color: #f20574;
+                  transition: all 0.4s ease-in-out;
                }
             }
          }
@@ -97,7 +106,7 @@
             justify-content: space-between;
 
             &-wrapper {
-               min-width: 300px;
+               width: 380px;
                transition: all 0.4s ease;
                display: flex;
 
@@ -111,7 +120,7 @@
                      padding: 1rem 0;
                      align-items: center;
                      margin-bottom: 2rem;
-                     border: 1px solid red;
+                     border: 1px solid #ef5da8;
 
                      img {
                         margin-left: 2rem;
@@ -124,6 +133,42 @@
                }
             }
          }
+
+         &-btn {
+            position: absolute;
+            border: none;
+            background: transparent;
+            font-size: 3rem;
+            opacity: 50%;
+            animation-name: scaling;
+            animation-timing-function: ease;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            top: 80%;
+            cursor: pointer;
+         }
+
+         .prev {
+            left: -40px;
+         }
+
+         .next {
+            right: -40px;
+         }
       }
+   }
+}
+
+@keyframes scaling {
+   0% {
+      transform: scale(1);
+   }
+
+   50% {
+      transform: scale(1.4);
+   }
+
+   100% {
+      transform: scale(1);
    }
 }
