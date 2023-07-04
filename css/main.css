@@ -465,7 +465,8 @@ a {
               top: -3px; }
           .footer-content-coder-graph-container .dots.active {
             transition: all 0.2s ease;
-            outline: 2px solid #fabad9; }
+            outline: 2px solid #fabad9;
+            transform: scale(1.4); }
       .footer-content-coder-info {
         width: 160px; }
         .footer-content-coder-info h5 {
