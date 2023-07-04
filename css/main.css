@@ -337,6 +337,7 @@ a {
       animation-duration: 3s;
       animation-iteration-count: infinite;
       top: 80%;
+      color: #f20574;
       cursor: pointer; }
     .odometro-content-slides .prev {
       left: -40px; }
@@ -407,17 +408,64 @@ a {
         width: 150px;
         height: 150px;
         margin-right: 3rem;
-        position: relative; }
-        .footer-content-coder-graph-user {
-          height: 125px;
-          width: 60px;
-          border: 1px solid #c9a3b5c2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .footer-content-coder-graph-options {
+          width: 32px;
+          height: 32px;
+          background-color: black;
           position: absolute;
-          border-radius: 80px 0 0 80px;
-          border-right: 0;
-          top: 50%;
-          left: 50%;
-          transform: translate(-135%, -50%) scale(1.5); }
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: -60px;
+          bottom: 0;
+          cursor: pointer;
+          transition: scale 0.4s ease; }
+          .footer-content-coder-graph-options:nth-child(3) {
+            top: -5px; }
+          .footer-content-coder-graph-options:nth-child(4) {
+            top: -50px;
+            left: 60%; }
+        .footer-content-coder-graph-options.active {
+          transform: scale(1.1);
+          background-color: #4e54ec;
+          transition: scale 0.4s ease; }
+        .footer-content-coder-graph-container {
+          height: 210px;
+          background-color: transparent;
+          width: 105px;
+          border-top-left-radius: 100px;
+          border-bottom-left-radius: 100px;
+          position: absolute;
+          border: 2px solid #fcddec;
+          left: -30px;
+          border-right: none; }
+          .footer-content-coder-graph-container .dots {
+            width: 5px;
+            height: 5px;
+            background-color: #f20574;
+            position: absolute;
+            bottom: -3px;
+            left: 95%;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            border: 2px solid transparent; }
+            .footer-content-coder-graph-container .dots:nth-child(2) {
+              left: 10px;
+              bottom: 45px; }
+            .footer-content-coder-graph-container .dots:nth-child(3) {
+              left: 8px;
+              top: 50px; }
+            .footer-content-coder-graph-container .dots:nth-child(4) {
+              top: -3px; }
+          .footer-content-coder-graph-container .dots.active {
+            transition: all 0.2s ease;
+            outline: 2px solid #fabad9; }
       .footer-content-coder-info {
         width: 160px; }
         .footer-content-coder-info h5 {
@@ -537,6 +585,22 @@ header {
   position: sticky;
   top: 10px;
   width: 53px; }
+  .sidebar::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 13px;
+    height: 13px;
+    background-color: #5d5fef;
+    border-radius: 50%; }
+  .sidebar::before {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #f20574;
+    border-radius: 50%; }
   .sidebar-list {
     display: flex;
     flex-direction: column;

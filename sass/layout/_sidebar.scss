@@ -10,6 +10,26 @@
    top: 10px;
    width: 53px;
 
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      width: 13px;
+      height: 13px;
+      background-color: #5d5fef;
+      border-radius: 50%;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      width: 13px;
+      height: 13px;
+      border: 1px solid #f20574;
+      border-radius: 50%;
+   }
+
    &-list {
       display: flex;
       flex-direction: column;

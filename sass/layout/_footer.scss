@@ -39,9 +39,6 @@
       align-items: center;
       justify-content: space-between;
 
-      &-logo {
-      }
-
       &-info {
          font-size: 1.4rem;
 
@@ -78,18 +75,82 @@
             height: 150px;
             margin-right: 3rem;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            &-user {
-               height: 125px;
-               width: 60px;
-               border: 1px solid #c9a3b5c2;
+            &-options {
+               width: 32px;
+               height: 32px;
+               background-color: black;
                position: absolute;
-               border-radius: 80px 0 0 80px;
-               border-right: 0;
+               border-radius: 50%;
+               color: white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               left: -60px;
+               bottom: 0;
+               cursor: pointer;
+               transition: scale 0.4s ease;
 
-               top: 50%;
-               left: 50%;
-               transform: translate(-135%, -50%) scale(1.5);
+               &:nth-child(3) {
+                  top: -5px;
+               }
+
+               &:nth-child(4) {
+                  top: -50px;
+                  left: 60%;
+               }
+            }
+
+            &-options.active {
+               transform: scale(1.1);
+               background-color: #4e54ec;
+               transition: scale 0.4s ease;
+            }
+
+            &-container {
+               height: 210px;
+               background-color: transparent;
+               width: 105px;
+               border-top-left-radius: 100px;
+               border-bottom-left-radius: 100px;
+               position: absolute;
+               border: 2px solid #fcddec;
+               left: -30px;
+               border-right: none;
+
+               .dots {
+                  width: 5px;
+                  height: 5px;
+                  background-color: #f20574;
+                  position: absolute;
+                  bottom: -3px;
+                  left: 95%;
+                  border-radius: 50%;
+                  transition: all 0.2s ease;
+                  border: 2px solid transparent;
+
+                  &:nth-child(2) {
+                     left: 10px;
+                     bottom: 45px;
+                  }
+
+                  &:nth-child(3) {
+                     left: 8px;
+                     top: 50px;
+                  }
+
+                  &:nth-child(4) {
+                     top: -3px;
+                  }
+               }
+
+               .dots.active {
+                  transition: all 0.2s ease;
+                  outline: 2px solid #fabad9;
+               }
             }
          }
 
